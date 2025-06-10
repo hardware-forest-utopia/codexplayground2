@@ -23,7 +23,6 @@ let food: Cell = { x: 0, y: 0 };
 let speed = 200; // ms per frame
 let lastTime = 0;
 let running = false;
-let gameOver = false;
 
 function initGrid() {
   const size = Math.min(window.innerWidth, window.innerHeight) * 0.9;
@@ -46,7 +45,6 @@ function reset() {
   placeFood();
   speed = 200;
   running = true;
-  gameOver = false;
   updateScore();
   instructionsEl.style.display = 'block';
   window.requestAnimationFrame(loop);
@@ -76,7 +74,6 @@ function update() {
 
   if (head.x < 0 || head.y < 0 || head.x >= cols || head.y >= rows || snake.some(c => c.x === head.x && c.y === head.y)) {
     running = false;
-    gameOver = true;
     instructionsEl.textContent = 'Game Over! Tap Restart.';
     instructionsEl.style.display = 'block';
     return;
