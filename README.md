@@ -2,7 +2,7 @@
 
 A classic retro Snake game built with TypeScript.
 
-🕹 [Play the game](https://<your-username>.github.io/codexplayground2/)
+🕹 [Play the game](https://hardware-forest-utopia.github.io/codexplayground2/)
 
 ## Enabling GitHub Pages
 
