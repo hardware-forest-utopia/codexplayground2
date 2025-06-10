@@ -4,5 +4,8 @@
   "private": true,
   "scripts": {
     "build": "tsc index.ts --outFile dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
   }
 }
